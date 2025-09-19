@@ -59,5 +59,10 @@ Update items (setText, setData)
 
 Dialogs (QMessageBox) to show messages or ask for info.
 
+ui->AiTextEDit->setReadOnly(true) can be used for textEdit and lineEdit, i.e when AI gives response, user cant edit the text edit ever, but CAN copy text in it.
+ui->askAiButton->setEnabled(false); can be used so like, if the response is being given, you can say setenabled false on the button so user cant spam it.
+then when response done you can say ui->askAiButton->setEnabled(true); so user can enter stuff again.
+
+
 
 
