@@ -1,0 +1,63 @@
+QSS
+
+https://dribbble.com/tags/productivity-app (figma might have ui ideas aswell)
+Now for gemini you can edit the text to tell gemini what to say. Shouldnt have any problems. If so, see if new api keys/models could be made
+*PROMPT*
+Budget:
+{
+  "text": "You are a budget assistant. Suggest optimal ways to save money for the user: [user input here]"
+}
+
+
+Diet:
+
+{
+  "text": "You are a diet planner. Give meal suggestions based on: [user input here]"
+}
+
+
+Wishlist:
+
+{
+  "text": "You are a personal shopping assistant. Recommend the best plan to purchase items: [user input here]"
+}
+-----x-----
+
+things that will be used in terms of widgets:
+QPushButton : buttons for actions (e.g: “Add Expense”, “Get Advice”)
+
+QLineEdit : single-line input fields (e.g: enter budget amount)
+
+QTextEdit / QLabel : multi-line text or labels (e.g: show AI response, logs)
+
+QCheckBox / QRadioButton : for options, selections, toggles
+
+QComboBox → dropdown menus (e.g: select category: food, rent, entertainment)
+
+QListWidget / QTableWidget → for lists/tables (expenses, tasks, wishlist items)
+
+qDebug, mainly for like error reports and all but that wont be necessary in final ver.
+
+
+How to place them using layouts (QVBoxLayout, QHBoxLayout, QGridLayout).
+
+How to get and set values (e.g., lineEdit->text(), comboBox->currentText(), checkBox->isChecked()).
+--------x--------
+ *List Management*
+
+To do List:
+
+QListWidget - easy for simple lists
+
+QTableWidget - if i need rows/columns (like category, amount, date etc)
+
+How to add items (addItem)
+
+Remove items (takeItem or removeRow)
+
+Update items (setText, setData)
+
+Dialogs (QMessageBox) to show messages or ask for info.
+
+
+
