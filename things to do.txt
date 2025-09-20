@@ -38,6 +38,8 @@ QListWidget / QTableWidget → for lists/tables (expenses, tasks, wishlist items
 
 qDebug, mainly for like error reports and all but that wont be necessary in final ver.
 
+QStackWidget so i can make epic games ahh
+
 
 How to place them using layouts (QVBoxLayout, QHBoxLayout, QGridLayout).
 
