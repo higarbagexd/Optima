@@ -16,23 +16,31 @@ QFrame {
 
 /* button pushing that one something === */
 QPushButton {
-    background-color: transparent;
-    color: #333333;
-    padding: 8px 14px;
+    background-color: #FFFFFF;     /* visible */
+    color: #111111;                /* dark text */
+    font-size: 14px;
+    font-family: "Avenir";
+    padding: 6px 12px;             /* enough space for text */
+    border: 1px solid #D1D5DB;    /* visible border */
     border-radius: 8px;
-    border: none;
-    text-align: left;
+    text-align: left;              /* icon left, text right */
+    min-height: 36px;              /* ensures height */
 }
 
 QPushButton:hover {
-    background-color: #E5E7EB;   /* hover gray */
+    background-color: #E5E7EB;     /* light gray hover */
+}
+
+QPushButton:pressed {
+    background-color: #D1D5DB;     /* slightly darker on click */
 }
 
 QPushButton:checked {
-    background-color: #E0E7FF;   /* active purple highlight */
+    background-color: #E0E7FF;     /* active purple highlight */
     color: #4338CA;
     font-weight: bold;
 }
+
 
 /* Those who care: */
 QTabBar::tab {
