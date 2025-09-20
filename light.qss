@@ -1,19 +1,20 @@
-# ========= GLOBAL =========
+/* = GLOBAL - */
 QWidget {
     background-color: #F9FAFB;   /* light gray background */
     color: #111111;              /* dark text */
     font-family: "Avenir";
     font-size: 14px;
 }
-#Frame
+
+/* ========== frame ========== */
 QFrame {
     background-color: #FFFFFF;
     border: 1px solid #E5E7EB;   /* subtle border */
     border-radius: 10px;
     padding: 10px;
 }
-#
-PUSH BUTTONS
+
+/* button pushing that one something === */
 QPushButton {
     background-color: transparent;
     color: #333333;
@@ -33,7 +34,7 @@ QPushButton:checked {
     font-weight: bold;
 }
 
-# buteer chiken
+/* Those who care: */
 QTabBar::tab {
     background: #F3F4F6;
     color: #333333;
@@ -47,7 +48,7 @@ QTabBar::tab:selected {
     color: white;
 }
 
-# line text combo --------------
+/* input thing  */
 QLineEdit, QTextEdit, QComboBox {
     background-color: #FFFFFF;
     color: #111111;
@@ -60,7 +61,7 @@ QLineEdit:focus, QTextEdit:focus, QComboBox:focus {
     border: 1px solid #4338CA;   /* purple focus outline */
 }
 
-# how i can kind of say --------------------
+/* buteer chicken */
 QListWidget, QTableWidget {
     background-color: #FFFFFF;
     border: 1px solid #E5E7EB;
@@ -72,7 +73,7 @@ QListWidget::item:selected, QTableWidget::item:selected {
     color: #4338CA;
 }
 
-# -- progress bar if i need it --------------------
+/* idk if i need progress bar whatever tho */
 QProgressBar {
     background-color: #E5E7EB;
     border-radius: 6px;
@@ -82,17 +83,17 @@ QProgressBar {
 }
 
 QProgressBar::chunk {
-    background-color: #4338CA;   # purple ig
+    background-color: #4338CA;   /* purple chunk */
     border-radius: 6px;
 }
 
-# label :)
+/* ========== label type shi ======= */
 QLabel {
     color: #111111;
     font-size: 14px;
 }
 
 QLabel#subtitle {
-    color: #6B7280;   
+    color: #6B7280;
     font-size: 12px;
 }
