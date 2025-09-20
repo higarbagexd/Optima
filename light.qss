@@ -1,0 +1,98 @@
+# ========= GLOBAL =========
+QWidget {
+    background-color: #F9FAFB;   /* light gray background */
+    color: #111111;              /* dark text */
+    font-family: "Avenir";
+    font-size: 14px;
+}
+#Frame
+QFrame {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;   /* subtle border */
+    border-radius: 10px;
+    padding: 10px;
+}
+#
+PUSH BUTTONS
+QPushButton {
+    background-color: transparent;
+    color: #333333;
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    text-align: left;
+}
+
+QPushButton:hover {
+    background-color: #E5E7EB;   /* hover gray */
+}
+
+QPushButton:checked {
+    background-color: #E0E7FF;   /* active purple highlight */
+    color: #4338CA;
+    font-weight: bold;
+}
+
+# buteer chiken
+QTabBar::tab {
+    background: #F3F4F6;
+    color: #333333;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin: 0 4px;
+}
+
+QTabBar::tab:selected {
+    background: #4338CA;   /* purple active tab */
+    color: white;
+}
+
+# line text combo --------------
+QLineEdit, QTextEdit, QComboBox {
+    background-color: #FFFFFF;
+    color: #111111;
+    border: 1px solid #D1D5DB;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+QLineEdit:focus, QTextEdit:focus, QComboBox:focus {
+    border: 1px solid #4338CA;   /* purple focus outline */
+}
+
+# how i can kind of say --------------------
+QListWidget, QTableWidget {
+    background-color: #FFFFFF;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+}
+
+QListWidget::item:selected, QTableWidget::item:selected {
+    background-color: #E0E7FF;
+    color: #4338CA;
+}
+
+# -- progress bar if i need it --------------------
+QProgressBar {
+    background-color: #E5E7EB;
+    border-radius: 6px;
+    text-align: center;
+    color: #111111;
+    height: 10px;
+}
+
+QProgressBar::chunk {
+    background-color: #4338CA;   # purple ig
+    border-radius: 6px;
+}
+
+# label :)
+QLabel {
+    color: #111111;
+    font-size: 14px;
+}
+
+QLabel#subtitle {
+    color: #6B7280;   
+    font-size: 12px;
+}
