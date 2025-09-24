@@ -20,11 +20,20 @@ QPushButton {
     color: #111111;                /* dark text */
     font-size: 14px;
     font-family: "Avenir";
-    padding: 6px 12px;             /* enough space for text */
-    border: 1px solid #D1D5DB;    /* visible border */
+
+    padding: 8px 25px;
+    /* padding-left: 20px; */
+   /* padding-right: 15px; */
+
+    border: 1px solid #D1D5DB;    /* visible border type shi*/
     border-radius: 8px;
+
     text-align: left;              /* icon left, text right */
-    min-height: 36px;              /* ensures height */
+    min-height: 36px;              /* i aint even gon lie height */
+     outline: none; /* this basically removes the dotted rectangle/keyboard focus on the text */
+
+
+
 }
 
 QPushButton:hover {
@@ -36,8 +45,8 @@ QPushButton:pressed {
 }
 
 QPushButton:checked {
-    background-color: #E0E7FF;     /* active purple highlight */
-    color: #4338CA;
+    background-color: #E0E7FF;   /* highlight */
+    color: #000000;               /* active text color */
     font-weight: bold;
 }
 
@@ -80,6 +89,18 @@ QListWidget::item:selected, QTableWidget::item:selected {
     background-color: #E0E7FF;
     color: #4338CA;
 }
+QHeaderView::section {
+    background-color: #F9FAFB;   /* light grey background */
+    color: #111827;              /* dark text color */
+        font-size: 14px;
+        padding: 6px;
+        min-height: 40px;
+
+
+    border: 1px solid #E5E7EB;
+    font-weight: bold;
+}
+
 
 /* idk if i need progress bar whatever tho */
 QProgressBar {
@@ -105,3 +126,125 @@ QLabel#subtitle {
     color: #6B7280;
     font-size: 12px;
 }
+/* ======= combo box =========== */
+QComboBox {
+    border: 1px solid #ccc;        /* gray border */
+    border-radius: 6px;            /* rounded corners */
+    padding: 4px 8px;              /* space inside the box */
+    background-color: #f9f9f9;     /* gray background */
+    min-width: 120px;              /* minimum width so it aint gon shrink to a crazy amount */
+}
+
+QComboBox:hover {
+    border-color: #888;            /* darker border when hovered */
+    background-color: #f0f0f0;     /* a bit darker background than normal on hover */
+}
+
+QComboBox::drop-down {
+    border: none;                  /* remove border from dropdown button */
+    width: 24px;                   /* width of dropdown button */
+}
+
+QComboBox::down-arrow { /* i could add my own down arrow using */
+
+    width: 12px;
+    height: 12px;
+}
+/* amount of butter chicken aka double spin box: */
+QDoubleSpinBox {
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 4px 8px;
+    background-color: #f9f9f9;     /* light gray background */
+    min-width: 100px;
+}
+
+QDoubleSpinBox:hover {
+    border-color: #888;            /* darker border on hover */
+    background-color: #f0f0f0;     /* slightly darker background */
+}
+
+QDoubleSpinBox::up-button,QDoubleSpinBox::down-button {
+    border: none;                  /* remove borders from spin buttons */
+    background: transparent;       /* no background */
+    width: 18px;                   /* button size */
+}
+
+QDoubleSpinBox::up-arrow {
+    /* custom up arrow can be added ig*/
+    width: 10px;
+    height: 10px;
+}
+
+QDoubleSpinBox::down-arrow {
+     /* custom down arrow can also be added */
+    width: 10px;
+    height: 10px;
+}
+/* CHECK BOX ========--- */
+QCheckBox {
+    spacing: 8px;                  /* space between box and text */
+    font-size: 14px;
+    color: #333;
+}
+
+QCheckBox::indicator {
+    width: 18px;                   /* size of checkbox square */
+    height: 18px;
+    border-radius: 4px;
+    border: 1px solid #888;
+    background: #fff;
+}
+
+QCheckBox::indicator:checked {
+    background-color: #4caf50;     /* green background when checked */
+    border: 1px solid #4caf50;     /* green border when checked */
+}
+/* =============== date time edit thing */
+/* General style for QDateEdit */
+QDateEdit {
+    border: 1px solid #aaa;
+    border-radius: 6px;         /* rounded corners */
+    padding: 2px;
+    background: #f9f9f9;
+    color: #333;                /*text colo */
+    selection-background-color: #4CAF50; /* green highlight when selecting */
+}
+
+/* When hovering */
+QDateEdit:hover {
+    border: 1px solid #4CAF50;
+}
+
+/* when u be clicking on that one something */
+QDateEdit:focus {
+    border: 1px solid #2196F3;  /* blue border */
+    background: #fff;
+}
+
+/* Drop-down button (calendar icon) */
+QDateEdit::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid #aaa;
+    background: #ddd;
+}
+
+/* hover effect thingy idk if it even works bruh*/
+QDateEdit::drop-down:hover {
+    background: #bbb;
+}
+/* QProgressBar */
+QProgressBar {
+    border: 2px solid #555;
+    border-radius: 10px;
+    text-align: center;
+}
+QProgressBar::chunk {
+    background-color: #3CB371; /* green bar */
+     border-radius: 6px;
+}
+
+
+
