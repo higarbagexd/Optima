@@ -8,11 +8,12 @@ QWidget {
 
 /* ========== frame ========== */
 QFrame {
-    background-color: #FFFFFF;
-    border: 1px solid #E5E7EB;   /* subtle border */
-    border-radius: 10px;
-    padding: 10px;
+    background-color: #F6F6F6;      /* soft light gray */
+    border: 1px solid #E0E0E0;      /* very subtle border */
+    border-radius: 12px;             /* slightly more rounded */
+    padding: 12px;                    /* inner spacing */
 }
+
 
 /* button pushing that one something === */
 QPushButton {
@@ -246,5 +247,49 @@ QProgressBar::chunk {
      border-radius: 6px;
 }
 
+/* === how i can kind of say scrolling that one instagroom */
+QScrollBar:vertical {
+    background: #F3F4F6;       /* gray ahh boy */
+    width: 10px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical {
+    background: #9CA3AF;       /* bruhhhhhhhhhhhhhhh */
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #6B7280;       /* darker on hover */
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    height: 0px;               /* hide arrow buttons */
+}
+
+QScrollBar:horizontal {
+    background: #F3F4F6;
+    height: 10px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal {
+    background: #9CA3AF;
+    min-width: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::handle:horizontal:hover {
+    background: #6B7280;
+}
+
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    width: 0px;
+}
 
 
